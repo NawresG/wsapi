@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Card.css"
-const Cart = ({el}) => {
+const Cart = ({el,localisation}) => {
   return (
  <div className="widget">
     <div className="left-panel panel">
@@ -8,7 +8,7 @@ const Cart = ({el}) => {
        {el.date}
       </div>
       <div className="city">
-        Mumbai
+        {localisation.tz_id}
       </div>
       <div className="temp">
         {el.day&&el.day.mintemp_c}°
